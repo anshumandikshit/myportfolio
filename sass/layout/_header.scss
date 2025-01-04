@@ -1,0 +1,94 @@
+@use '../abstracts//index' as *;
+
+.header {
+    // border: 1px solid red;
+    grid-row: 1 / 3;
+    grid-column: left-start / right-end;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    background-color: $bg-color-secondary;
+
+    .heading-box {
+        grid-row: 4 / 6;
+        grid-column: 2 / 7;
+        margin-top: -5rem;
+        line-height: 0.9;
+        .heading--animation {
+            animation: moveInLeft 01s ease-in;
+        }
+
+    }
+
+    .btn-download-resume {
+        display: inline-block;
+        font-weight: 700;
+        font-size: 3rem;
+        border : $border-width  solid $color-highlight-primary;
+        
+        border-radius: 2rem;
+        color: $color-highlight-primary;
+        animation: delay-visibility 01s ease-out;
+        animation-delay: 1s;
+        animation-fill-mode: backwards;
+    }
+
+
+    .social-media {
+
+        &-box{
+            grid-column: 12 / -1;
+        grid-row: -1 / 1;
+        align-self: end;
+        margin-bottom: 2rem;
+        animation: delay-visibility 01s ease-out;
+        animation-delay: 1s;
+        animation-fill-mode: backwards;
+        }
+        &__links {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            width: min-content;
+            position: relative;
+             li:not(:last-child){
+                margin-bottom: 1rem;
+            }
+            &::after {
+                content: "";
+                position: absolute ;
+                
+                height: 15rem;
+                width: $border-width ;
+                top: 0;
+                left: 50% ;
+                transform: translateX(-50%) translateY(-20rem);
+                border-radius: 1rem;
+                background-color: $color-highlight-primary;
+                
+            }
+            &--item {
+                width: 50px; /* Adjust the size as needed */ 
+                height: 50px; /* Adjust the size as needed */ 
+                fill: white; /* Adjust the color as needed */ 
+                //border-radius: 50%; /* Rounded corners */ 
+                border: none;
+                background-color: transparent; /* Background color */ 
+                padding: 0; /* Padding to create space around the icon */ 
+                transition: transform 0.1s ease-in;
+                // box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+                &:hover {
+                    transform: scale(1.3);
+                }
+                &:visited,
+                &:active {
+                    transform: scale(1.2);
+                }
+            }
+        }
+        
+    }
+
+
+}

@@ -1,0 +1,13 @@
+@use '../abstracts//index' as *;
+
+.mb-s {
+    margin-bottom : 2rem ;
+}
+
+.mt-s {
+    margin-top :2rem ;
+}
+
+.color--highlight {
+    color: $color-highlight-primary;
+}

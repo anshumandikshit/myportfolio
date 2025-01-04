@@ -1,0 +1,25 @@
+@use "../abstracts/index" as * ;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+ 
+}
+
+body {
+    font-family: $font-primary;
+    color: white;
+    font-weight: 400;
+    line-height: $line-height;
+    font-size: 2.5rem;
+    
+    background-color: $bg-color-primary;
+}   

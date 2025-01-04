@@ -1,0 +1,43 @@
+@use '../abstracts//index' as *;
+
+.aboutMe {
+    background-color: $bg-color-secondary;
+
+    grid-row: 3 / 4;
+    grid-column: left-start / right-end;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: min-content 1fr ;
+
+    .heading {
+        grid-column: 2 / -1;
+    }
+    &__content {
+        grid-column: 2 / -2 ;
+        display: flex;
+        .highlight-bar {
+            
+            width : 40rem ;
+            height: $border-width ;
+            margin-top: calc((#{$line-height * $font-size-sub}) / 2);
+            border-radius: 1rem;
+            background-color: $color-highlight-primary;
+            margin-right: 5rem;
+        }
+
+        // &::after {
+        //     content: "";
+        //     position: absolute ;
+            
+        //     height: 15rem;
+        //     width: $border-width ;
+        //     top: 0;
+        //     left: 50% ;
+        //     transform: translateX(-50%) translateY(-20rem);
+        //     border-radius: 1rem;
+        //     background-color: $color-highlight-primary;
+            
+        // }
+    }
+}

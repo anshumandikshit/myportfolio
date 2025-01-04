@@ -1,0 +1,15 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "This is the npm package for the Portfolio WebSite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "sass sass/main.scss css/styles.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.83.0"
+  }
+}
