@@ -1,5 +1,5 @@
 .gridContainer{
     display: grid;
     grid-template-columns: [left-start]minmax(100px,1fr) [left-end center-start]repeat(10,[col-start] minmax(min-content,150px) [col-end] ) [center-end right-start] minmax(100px,1fr) [right-end];
-    grid-template-rows: min-content 90vh 1fr;
+    grid-template-rows: min-content 90vh min-content  min-content;
 }

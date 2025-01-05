@@ -13,11 +13,13 @@
 @use "components/form";
 @use "components/popup";
 @use "components/story";
+@use "components/progress-bar";
 
 @use "layout/grid";
 @use "layout/header";
 @use "layout/navigation";
 @use "layout/aboutMe" ;
+@use "layout/skills" ;
 @use "layout/footer";
 
 @use "pages/home";

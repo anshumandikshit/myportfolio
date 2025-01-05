@@ -1,0 +1,22 @@
+@use '../abstracts//index' as * ;
+
+.progress-container {
+  width: 100%;
+  background-color: $bg-color-primary;
+  border-radius: 1rem ;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 0.5rem;
+  width: 0;
+  background-color: $color-highlight-primary;
+  border-radius: 1rem ;
+  
+
+
+  &--animated {
+    transition: width 0.3s ease-in;
+    backface-visibility: hidden;
+  }
+}
