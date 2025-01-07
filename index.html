@@ -15,7 +15,7 @@
 
 <body>
     <div class="gridContainer">
-        <nav id="navBar" class="navBar mb-s mt-s">
+        <nav id="navBar" class="navBar ">
             <img src="img/favicon.png" alt="logo" class="navBar__logo">
             <ul class="navBar__navLinks">
                 <li><a href="#aboutMe" class="btn navItem">About Me</a></li>
@@ -41,7 +41,7 @@
                 </h1>
                 <a href="#" class="btn btn-download-resume btn--animated">Download Resume</a>
             </div>
-            <section class="social-media-box">
+            <div class="social-media-box">
 
                 <ul class="social-media__links">
                     <li>
@@ -73,9 +73,14 @@
                         </a>
                     </li>
                 </ul>
-            </section>
+            </div>
+            <div class="scroll-to-main scroll-to-main--animated">
+                <svg class="">
+                    <use xlink:href="img/sprites/brands.svg#arrow-down"></use>
+                </svg>
+            </div>
         </header>
-        <section id="aboutMe" class="aboutMe">
+        <section id="aboutMe" class="section aboutMe">
             <h1 class="heading-primary heading">
                 <span class="heading-primary--main">
                     About Me
@@ -97,7 +102,7 @@
                 </div>
             </h1>
         </section>
-        <section id="skillsContainer" class="skillsContainer">
+        <section id="skillsContainer" class="section skillsContainer">
             <h1 class="heading-primary heading  mt-s mb-s">
                 <span class="heading-primary--main">
                     My Skills
@@ -200,7 +205,7 @@
         </section>
         <!-- <section class="project">Projects</section>
         <footer class="footer">Footer</footer> -->
-
+        
     </div>
     <script src="script.js"></script>
 </body>

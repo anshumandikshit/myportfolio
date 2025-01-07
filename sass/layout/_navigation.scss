@@ -1,14 +1,17 @@
 
 @use '../abstracts//index' as * ;
 .navBar{
-    grid-column: left-end / right-start;
-    grid-row: 1 / 2;
+     grid-column: left-start / right-end;
+     
+     grid-row: 1 / 2;
+     width: 100%;
     z-index: 10;
     background-color: $bg-color-secondary;
     
     display: grid;
     grid-template-columns: 200px 1fr ;
     align-items: center;
+    padding: 2rem 10rem;
     
     &__logo{
         
@@ -37,5 +40,11 @@
                 color: $color-highlight-primary;
             }
         }
+    }
+
+    &--sticky{
+        
+        position: fixed;
+        box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.5);
     }
 }

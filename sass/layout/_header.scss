@@ -90,5 +90,24 @@
         
     }
 
+    .scroll-to-main {
+        grid-row: -1 / -2;
+        grid-column: 6 / 8;
+        justify-self: center ;
+        align-self: center;
+        fill: rgba($color-highlight-primary,0.5);
+        cursor: pointer;
+        
+        svg {
+            height: 10rem;
+            width : 10rem;
+        }
+        &--animated {
+            animation: down-pop 01s ease-in-out;
+            animation-iteration-count: infinite;
+            
+        }
+    }
+
 
 }

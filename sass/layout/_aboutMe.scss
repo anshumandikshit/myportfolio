@@ -1,8 +1,10 @@
 @use '../abstracts//index' as *;
 
 .aboutMe {
-    background : linear-gradient(to bottom ,rgba(44, 47, 54,0.8),transparent) ;
     background-color: $bg-color-primary;
+    background : linear-gradient(to bottom ,rgba(44, 47, 54,0.8),transparent) ;
+    
+    background-repeat:  no-repeat;
 
     grid-row: 3 / 4;
     grid-column: left-start / right-end;
