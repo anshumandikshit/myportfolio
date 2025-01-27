@@ -1,0 +1,15 @@
+@use '../abstracts//index' as * ;
+
+
+.recommendation {
+    grid-row: 5 /6;
+    grid-column: left-start / right-end;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2,min-content);
+    background-color: $bg-color-tertiary ;
+
+    .heading {
+        grid-column: 2 / -1;
+    }
+}

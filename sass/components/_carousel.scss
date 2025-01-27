@@ -1,0 +1,87 @@
+@use "../abstracts//index" as *;
+
+.carousel {
+  grid-column: 1 / -1;
+  width: 50%;
+  //height: 66rem;
+  grid-row: 2 / 3;
+  margin: 0 auto;
+  position: relative;
+
+  &__btn {
+    position: absolute;
+    height: 10rem;
+    width: 10rem;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: $color-highlight-primary;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &__btn--left {
+      left: -10%;
+    }
+    &__btn--right {
+      right: -10%;
+    }
+
+    svg {
+      height: 5rem;
+      width: 5rem;
+    }
+  }
+  &__track {
+    &-container {
+      width: 100%;
+      height: 50rem;
+
+      position: relative;
+      overflow: hidden;
+    }
+    list-style-type: none;
+    height: 100%;
+    transition: transform 0.2s ease-in;
+    
+  }
+
+  &__slide {
+    width: 100%;
+    height: 100%;
+    background-color: orange;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    border: 1px solid red;
+    
+  }
+
+  &__nav {
+    display: flex;
+
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    .current-slide {
+        background-color: $color-highlight-primary;
+      }
+  }
+
+  &__indicator {
+    border: none;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: $color-white;
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+
+}
