@@ -1,4 +1,4 @@
-console.log("carouselllllll......") ;
+
 
 const prevBtn = document.querySelector(".carousel__btn__btn--left");
 const nextBtn = document.querySelector(".carousel__btn__btn--right");
@@ -11,16 +11,10 @@ const slideWidth = slides[0].getBoundingClientRect().width ;
 
 
 slides.forEach((slide,index)=>{
-    console.log(`sliede${index} left----->>>`, (slideWidth * index))
     slide.style.left = `${slideWidth * index}px` ;
 })
 
-console.log('prevBtn------>',prevBtn)
-console.log('nextBtn------>',nextBtn)
-console.log('track------>',track)
-console.log('slides------>',slides)
 
-console.log(slideWidth) ;
 
 const hideShowBtn = (slides,targetIndex) =>{
     if(targetIndex===0){
@@ -55,7 +49,6 @@ nextBtn.addEventListener('click',()=>{
     let currentDot = carouselNav.querySelector('.current-slide');
     const nextSlide = currentSlide.nextElementSibling ;
     updateSlide(track,currentSlide,nextSlide);
-    console.log(currentSlide) ;
     updateDot(currentDot,currentDot.nextElementSibling);
 
     const nextSlideIndex = slides.findIndex(slide=>slide === nextSlide);
@@ -75,16 +68,14 @@ prevBtn.addEventListener('click',()=>{
     hideShowBtn(slides,prevSlideIndex) ;
 });
 
-console.log(navIndicators);
 
 carouselNav.addEventListener('click',(event)=>{
-    console.log('navClick' , event) ;
+
     const currentSlide = track.querySelector('.current-slide');
     let clickedButton = event.target.closest('.carousel__indicator');
-    console.log(clickedButton) ;
+
 
     let clickedIndex = navIndicators.findIndex(item=> item === clickedButton);
-    console.log('clickedIndex',clickedIndex);
     let targetSlide = slides[clickedIndex] ;
     updateSlide(track,currentSlide,targetSlide);
 

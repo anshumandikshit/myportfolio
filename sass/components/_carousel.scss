@@ -2,7 +2,7 @@
 
 .carousel {
   grid-column: 1 / -1;
-  width: 50%;
+  width: 60%;
   //height: 66rem;
   grid-row: 2 / 3;
   margin: 0 auto;
@@ -38,6 +38,7 @@
 
       position: relative;
       overflow: hidden;
+      
     }
     list-style-type: none;
     height: 100%;
@@ -48,12 +49,39 @@
   &__slide {
     width: 100%;
     height: 100%;
-    background-color: orange;
+    background-color: $bg-color-secondary;
     position: absolute;
     top: 0%;
     bottom: 0%;
-    border: 1px solid red;
+    //border: 1px solid red;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
     
+    >* {
+      border: white;
+    }
+    &__profile {
+      flex: 0 0 30% ;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+      &-img {
+        height: 20rem;
+        width: 20rem;
+        border: 5px solid $color-white;
+      }
+      &-name {
+
+      }
+    }
+
+    &__content {
+      flex: 1 0 ;
+    }
+
   }
 
   &__nav {
