@@ -37,7 +37,7 @@ let recommendations = [
       "Text": "I rarely come across real talents who stand out like Dikshit. I had the pleasure of working with Dikshit, collaborating on several projects. Dikshit ability to handle multiple projects was unlike any I have seen before and made a dramatic increase in the productivity level of our projects, he has the ability to deliver Azure and Azure Devops being one of them. No matter how tense a meeting. As a collaborative and intelligent team member.",
       "Creation Date": "02/15/21, 08:08 AM",
       "Status": "VISIBLE",
-      "ProfileImg" :"https://media.licdn.com/dms/image/v2/D5635AQEQ6X3mXmDYvA/profile-framedphoto-shrink_100_100/profile-framedphoto-shrink_100_100/0/1631621521587?e=1738771200&v=beta&t=_VAHgUkQ0eWoMRGGedLPC9XAGhn3unHMmV_LKeh7uIA"
+      "ProfileImg" :"https://media.licdn.com/dms/image/v2/C4E03AQFb8AinwvXCKg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1599829678852?e=1743638400&v=beta&t=9Srdil3XwTwfkzTjLjKxXMBvDrd2Ut2_1W_gMT4Dmoc"
     },
     {
       "First Name": "Suraj",

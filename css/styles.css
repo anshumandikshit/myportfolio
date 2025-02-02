@@ -243,7 +243,7 @@ body {
 .gridContainer {
   display: grid;
   grid-template-columns: [left-start] minmax(100px, 1fr) [left-end center-start] repeat(10, [col-start] minmax(min-content, 150px) [col-end]) [center-end right-start] minmax(100px, 1fr) [right-end];
-  grid-template-rows: min-content 90vh min-content min-content auto;
+  grid-template-rows: min-content 90vh min-content min-content auto auto;
 }
 
 .section {
@@ -444,8 +444,98 @@ body {
   grid-column: 1/-1;
 }
 
-.recommendation {
+.experienceContainer {
   grid-row: 5/6;
+  grid-column: left-start/right-end;
+  background-color: rgb(52, 53, 58);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: min-content min-content;
+}
+.experienceContainer .heading {
+  grid-row: 1/2;
+  grid-column: 2/-1;
+}
+
+.experienceCards {
+  grid-row: 2/3;
+  grid-column: 1/-1;
+  margin: 0 auto;
+  list-style-type: none;
+}
+.experienceCards .item {
+  width: 40%;
+  display: grid;
+  grid-template-rows: min-content auto;
+  grid-template-columns: 15rem auto;
+  margin: 2rem auto;
+}
+.experienceCards .item__designation {
+  grid-column: 2/-1;
+  grid-row: 1/2;
+  align-self: center;
+}
+.experienceCards .item__organisationContainer {
+  grid-column: 2/-1;
+  grid-row: 2/3;
+}
+.experienceCards .item__tenure {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  align-self: center;
+  justify-self: center;
+}
+.experienceCards .item__tenure__bullet-point {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 60%;
+  background-color: rgb(254, 199, 11);
+  box-shadow: 0 0 20px 5px rgba(254, 199, 11, 0.5);
+  position: relative;
+}
+.experienceCards .item__tenure__bullet-point-tag {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 200%;
+  background-color: rgb(254, 199, 11);
+}
+.experienceCards .item__border-left-line {
+  grid-row: 2/-1;
+  border-left: 0.5rem solid #fff;
+  border-radius: 1rem;
+  margin: 0 auto;
+}
+.experienceCards .item__project__description {
+  word-wrap: break-word;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.experienceCards .item .tag {
+  position: relative;
+}
+.experienceCards .item .tag::before {
+  content: attr(data-tenure);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0.5rem 4rem 0.5em 1rem;
+  white-space: nowrap;
+  width: min-content;
+  color: rgb(52, 53, 58);
+  background-color: inherit;
+}
+.experienceCards .item .tag--left::before {
+  right: 100%;
+  clip-path: polygon(0% 0%, 80% 0%, 100% 50%, 80% 100%, 0 100%);
+}
+
+.recommendation {
+  grid-row: 6/7;
   grid-column: left-start/right-end;
   display: grid;
   grid-template-columns: repeat(12, 1fr);

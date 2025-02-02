@@ -14,6 +14,7 @@ const onNavBarClick = (event) => {
     const targetElement = document.getElementById(targetId);
     targetElement.scrollIntoView({
       behavior: "smooth",
+      
     });
   }
 };
@@ -23,6 +24,7 @@ const onScrollToMainClick = (event) => {
   headerNextElement.style.marginTop = `${navBarHeight + 100}px`;
   headerNextElement.scrollIntoView({
     behavior: "smooth",
+    
   });
 };
 
