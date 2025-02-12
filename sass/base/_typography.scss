@@ -1,15 +1,25 @@
 @use '../abstracts//index' as *;
 
 .heading-primary {
-    
+
     &--main {
         font-size: $font-size-main;
-        
+
+        @media (max-width: 900px) {
+            font-size: 4rem;
+
+        }
     }
+
     &--sub {
         display: inline-block;
         font-size: $font-size-sub;
         margin-bottom: 5rem;
+
+        @media (max-width: 900px) {
+            font-size: 2rem;
+
+        }
 
     }
 }

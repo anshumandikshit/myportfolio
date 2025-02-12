@@ -15,6 +15,21 @@
 
 <body>
     <div class="gridContainer">
+        <nav id="navBar sidenav" class="sidenav">
+            <div class="btn btn--close">
+                <svg class="btn--close__icon">
+                    <use xlink:href="img/sprites/solid.svg#xmark"></use>
+                </svg> 
+            </div>
+            <ul class="sidenav__navLinks">
+                <li><a href="#aboutMe" class="btn navItem">About Me</a></li>
+                <li><a href="#skillsContainer" class="btn navItem">Skills</a></li>
+                <li><a href="#experienceContainer" class="btn navItem">Projects</a></li>
+                <li><a href="#recommendations" class="btn navItem">Recommendations</a></li>
+                <li><a href="#" class="btn navItem">Rewards</a></li>
+                <li><a href="#" class="btn navItem">Contact Me</a></li>
+            </ul>
+        </nav>
         <nav id="navBar" class="navBar ">
             <img src="img/favicon.png" alt="logo" class="navBar__logo">
             <ul class="navBar__navLinks">
@@ -24,6 +39,11 @@
                 <li><a href="#recommendations" class="btn navItem">Recommendations</a></li>
                 <li><a href="#" class="btn navItem">Rewards</a></li>
                 <li><a href="#" class="btn navItem">Contact Me</a></li>
+            </ul>
+            <ul class="navBar__hamburger btn">
+                <svg class="navBar__hamburger-img">
+                    <use xlink:href="img/sprites/solid.svg#bars"></use>
+                </svg>
             </ul>
         </nav>
         <header class="header">

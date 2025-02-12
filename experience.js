@@ -113,6 +113,7 @@ let createCard= (exp,index) =>{
                     <h3 class="item__designation">${exp.designation}</h3>
                     <div class="item__organisationContainer">
                         <h4 class="item__organisation">${exp.organisation}</h4>
+                        <h4 class="item__organisation__tenure">${exp.tenure}</h4>
                         ${projectHTML}
                     </div>
                 </li>`;

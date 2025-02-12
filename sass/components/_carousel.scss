@@ -22,6 +22,7 @@
     &__btn--left {
       left: -10%;
     }
+
     &__btn--right {
       right: -10%;
     }
@@ -31,6 +32,7 @@
       width: 5rem;
     }
   }
+
   &__track {
     &-container {
       width: 100%;
@@ -38,12 +40,13 @@
 
       position: relative;
       overflow: hidden;
-      
+
     }
+
     list-style-type: none;
     height: 100%;
     transition: transform 0.2s ease-in;
-    
+
   }
 
   &__slide {
@@ -57,29 +60,41 @@
     padding: 2rem;
     display: flex;
     align-items: center;
-    
+
     >* {
       border: white;
     }
+
     &__profile {
-      flex: 0 0 30% ;
+      flex: 0 0 30%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      
+
       &-img {
         height: 20rem;
         width: 20rem;
         border: 5px solid $color-white;
-      }
-      &-name {
 
+        @media only screen and (max-width: 767.98px) {
+          height: 10rem;
+          width: 10rem;
+        }
       }
+
+      &-name {}
     }
 
     &__content {
-      flex: 1 0 ;
+      flex: 1 0;
+      @media only screen and (max-width: 767.98px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media only screen and (max-width: 767.98px) {
+      flex-direction: column;
     }
 
   }
@@ -92,9 +107,10 @@
     justify-content: center;
     align-items: center;
     padding: 1rem 0;
+
     .current-slide {
-        background-color: $color-highlight-primary;
-      }
+      background-color: $color-highlight-primary;
+    }
   }
 
   &__indicator {
@@ -103,6 +119,7 @@
     width: 2rem;
     border-radius: 50%;
     background-color: $color-white;
+
     &:not(:last-child) {
       margin-right: 1rem;
     }

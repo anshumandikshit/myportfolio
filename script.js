@@ -2,6 +2,10 @@ const navbar = document.getElementById("navBar");
 const skilsItems = document.querySelectorAll(".skills__card__item");
 const header = document.querySelector(".header");
 const scrollToMain = header.querySelector(".scroll-to-main");
+const navHamburger = navbar.querySelector('.navBar__hamburger') ;
+const sideBarNav = document.querySelector('.sidenav') ;
+
+console.log("navHamburger------>>>>",navHamburger);
 
 const allSections = document.querySelectorAll("section");
 
@@ -81,3 +85,26 @@ allSections.forEach((section) => {
 
 scrollToMain.addEventListener("click", onScrollToMainClick);
 navbar.addEventListener("click", onNavBarClick);
+
+
+
+
+//Navigation-hamburger on click
+
+navHamburger.addEventListener('click',event =>{
+  const hamburgerImg = event.target.closest('.btn') ;
+  console.log("hamburgerImg------->>",hamburgerImg) ;
+  if(hamburgerImg){
+    sideBarNav.classList.add('sidenav__expanded') ;
+  }
+}) ;
+
+sideBarNav.addEventListener('click',event=>{
+  const closeBtn = event.target.closest('.btn--close');
+  console.log("closeBtn------->>>",closeBtn) ;
+  const navlink = event.target.closest('.navItem');
+  if(closeBtn || navlink){
+    sideBarNav.classList.remove('sidenav__expanded') ;
+  }
+})
+

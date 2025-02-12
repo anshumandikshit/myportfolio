@@ -1,11 +1,12 @@
 @use '../abstracts//index' as * ;
 
+.btn,
 .btn:visited,
 .btn:link {
     padding: 2rem 3rem;
     text-decoration: none;
     color: inherit;
-    
+    cursor: pointer;
 }
 
 .btn--animated {
