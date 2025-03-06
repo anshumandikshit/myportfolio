@@ -278,7 +278,7 @@ body {
 .gridContainer {
   display: grid;
   grid-template-columns: [left-start] minmax(100px, 1fr) [left-end center-start] repeat(10, [col-start] minmax(min-content, 150px) [col-end]) [center-end right-start] minmax(100px, 1fr) [right-end];
-  grid-template-rows: min-content 90vh min-content min-content auto auto;
+  grid-template-rows: min-content 90vh min-content min-content auto auto auto;
   position: relative;
 }
 
@@ -708,6 +708,47 @@ body {
 }
 .recommendation .heading {
   grid-column: 2/-1;
+}
+
+.rcContainer {
+  grid-row: 7/8;
+  grid-column: 1/-1;
+  margin: 2rem auto;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rcContainer .cards {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+.rcContainer .cards__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
+  padding: 20px;
+  background-color: rgb(61, 62, 66);
+}
+.rcContainer .cards__item__img {
+  height: 30rem;
+  width: 30rem;
+}
+@media only screen and (max-width: 767.98px) {
+  .rcContainer .cards__item__img {
+    height: 10rem;
+    width: 10rem;
+  }
+}
+.rcContainer .cards__item__link {
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */

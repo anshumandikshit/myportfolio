@@ -4,6 +4,7 @@ const header = document.querySelector(".header");
 const scrollToMain = header.querySelector(".scroll-to-main");
 const navHamburger = navbar.querySelector('.navBar__hamburger') ;
 const sideBarNav = document.querySelector('.sidenav') ;
+const mainGridContainer = document.querySelector('.gridContainer') ;
 
 console.log("navHamburger------>>>>",navHamburger);
 
@@ -14,8 +15,12 @@ const onNavBarClick = (event) => {
   // console.log(event) ;
   if (event.target.classList.contains("navItem")) {
     event.preventDefault();
+    //const navBarHeight = navbar.getBoundingClientRect().height ;
+    //console.log("navBarHeight----->>>>",navBarHeight); 
     const targetId = event.target.getAttribute("href").substring(1);
     const targetElement = document.getElementById(targetId);
+    //targetElement.style.marginTop = `${2*navBarHeight}px` ;
+    //console.log("marginTop----->>>>",targetElement.style.marginTop); 
     targetElement.scrollIntoView({
       behavior: "smooth",
       
@@ -106,5 +111,11 @@ sideBarNav.addEventListener('click',event=>{
   if(closeBtn || navlink){
     sideBarNav.classList.remove('sidenav__expanded') ;
   }
-})
+}) ;
+
+// mainGridContainer.addEventListener('click',event=>{
+//   if(sideBarNav.classList.contains('sidenav__expanded')){
+//     sideBarNav.classList.remove('sidenav__expanded');
+//   }
+// })
 

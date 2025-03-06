@@ -1,0 +1,45 @@
+@use '../abstracts//index' as *;
+
+.rcContainer {
+    grid-row:  7/ 8;
+    grid-column: 1 / -1;
+    margin: 2rem auto;
+    width: 70%;
+    // background-color: red;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .cards {
+        list-style-type: none;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        //background-color: $bg-color-tertiary;
+        padding: 2rem;
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 3rem;
+            padding: 20px;
+            background-color: $bg-color-tertiary;
+            &__img {
+                height: 30rem;
+                width: 30rem;
+
+                @media only screen and (max-width: 767.98px) {
+                    height: 10rem;
+                width: 10rem;
+                }
+            }
+            &__link {
+                color: white;
+
+            }
+        }
+    }
+}
