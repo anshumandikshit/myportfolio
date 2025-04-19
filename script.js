@@ -91,6 +91,7 @@ allSections.forEach((section) => {
 
 scrollToMain.addEventListener("click", onScrollToMainClick);
 navbar.addEventListener("click", onNavBarClick);
+sideBarNav.addEventListener("click",onNavBarClick) ;
 
 
 
@@ -98,7 +99,7 @@ navbar.addEventListener("click", onNavBarClick);
 //Navigation-hamburger on click
 
 navHamburger.addEventListener('click',event =>{
-  const hamburgerImg = event.target.closest('.btn') ;
+  const hamburgerImg = event.target.closest('.navBar__hamburger-btn') ;
   console.log("hamburgerImg------->>",hamburgerImg) ;
   if(hamburgerImg){
     sideBarNav.classList.add('sidenav__expanded') ;
