@@ -30,6 +30,16 @@ let recommendations = [
       "ProfileImg" : "https://media.licdn.com/dms/image/v2/C5603AQEMdl0drz4KHg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1626416601869?e=1749686400&v=beta&t=oxj9swbo4UFlHRCEtSav0qicU9ytZrX7v5UjZ5Ip1OY"
     },
     {
+      "First Name": "Chhaya",
+      "Last Name": "Karweti",
+      "Company": "Capgemini",
+      "Job Title": "Manager",
+      "Text": "I had the pleasure of working with Anshuman when he joined Accenture as a fresher. From day one, his enthusiasm for learning and exploring new technologies stood out. He quickly grasped complex concepts in Azure services, C#, and SQL, and was remarkably fast at applying his knowledge to real-world tasks",
+      "Creation Date": "10/16/21, 09:59 AM",
+      "Status": "VISIBLE",
+      "ProfileImg" : "https://media.licdn.com/dms/image/v2/C5103AQEih3N8yGsRYQ/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1575210560450?e=1750291200&v=beta&t=SwQT3jpBa9BCsGML5dvIxjyM7eU5MfFAOY3jvFPPJDA"
+    },
+    {
       "First Name": "Santhosh",
       "Last Name": "Manchala",
       "Company": "Tek Yantra Inc",
