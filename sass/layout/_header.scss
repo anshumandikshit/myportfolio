@@ -19,6 +19,11 @@
             animation: moveInLeft 01s ease-in;
         }
 
+        @media only screen and (max-width: 600px) {
+           grid-column: 2 / 11 ;
+            
+        }
+
     }
 
     .btn-download-resume {
@@ -32,6 +37,11 @@
         animation: delay-visibility 01s ease-out;
         animation-delay: 1s;
         animation-fill-mode: backwards;
+
+        @media only screen and (max-width: 600px) {
+            font-size: inherit;
+
+        }
     }
 
 

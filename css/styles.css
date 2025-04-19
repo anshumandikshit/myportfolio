@@ -137,6 +137,13 @@ body {
   color: inherit;
   cursor: pointer;
 }
+@media only screen and (max-width: 600px) {
+  .btn,
+  .btn:visited,
+  .btn:link {
+    padding: 1rem 2rem;
+  }
+}
 
 .btn--animated {
   transition: transform 0.3s ease-in-out;
@@ -328,6 +335,11 @@ body {
 .header .heading-box .heading--animation {
   animation: moveInLeft 1s ease-in;
 }
+@media only screen and (max-width: 600px) {
+  .header .heading-box {
+    grid-column: 2/11;
+  }
+}
 .header .btn-download-resume {
   display: inline-block;
   font-weight: 700;
@@ -338,6 +350,11 @@ body {
   animation: delay-visibility 1s ease-out;
   animation-delay: 1s;
   animation-fill-mode: backwards;
+}
+@media only screen and (max-width: 600px) {
+  .header .btn-download-resume {
+    font-size: inherit;
+  }
 }
 .header .social-media-box {
   grid-column: 12/-1;
@@ -585,6 +602,11 @@ body {
 .aboutMe .heading {
   grid-column: 2/-1;
 }
+@media only screen and (max-width: 600px) {
+  .aboutMe .heading--highlighter {
+    border-bottom: 0.5rem solid rgb(254, 199, 11);
+  }
+}
 .aboutMe__content {
   grid-column: 2/-2;
   display: flex;
@@ -596,6 +618,11 @@ body {
   border-radius: 1rem;
   background-color: rgb(254, 199, 11);
   margin-right: 5rem;
+}
+@media only screen and (max-width: 600px) {
+  .aboutMe__content .highlight-bar {
+    display: none;
+  }
 }
 
 .skillsContainer {
@@ -677,6 +704,7 @@ body {
   grid-column: 1/-1;
   margin: 0 auto;
   list-style-type: none;
+  column-gap: 1rem;
 }
 .experienceCards .item {
   width: 70%;
