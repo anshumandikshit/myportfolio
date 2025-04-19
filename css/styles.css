@@ -195,6 +195,14 @@ body {
   height: 5rem;
   width: 5rem;
 }
+@media only screen and (max-width: 1200px) {
+  .carousel__btn__btn--left {
+    left: -15%;
+  }
+  .carousel__btn__btn--right {
+    right: -15%;
+  }
+}
 .carousel__track {
   list-style-type: none;
   height: 100%;
@@ -280,6 +288,11 @@ body {
   grid-template-columns: [left-start] minmax(100px, 1fr) [left-end center-start] repeat(10, [col-start] minmax(min-content, 150px) [col-end]) [center-end right-start] minmax(100px, 1fr) [right-end];
   grid-template-rows: min-content 90vh min-content min-content auto auto auto;
   position: relative;
+}
+@media only screen and (max-width: 992px) {
+  .gridContainer {
+    grid-template-rows: min-content 92vh min-content min-content auto auto auto;
+  }
 }
 
 .section {
@@ -378,6 +391,31 @@ body {
 .header .scroll-to-main--animated {
   animation: down-pop 1s ease-in-out;
   animation-iteration-count: infinite;
+}
+.header .profile-pic {
+  grid-row: 2/-1;
+  grid-column: 7/11;
+  animation: delay-visibility 1s ease-out;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+  height: fit-content;
+  align-self: center;
+}
+.header .profile-pic__img {
+  height: 70rem;
+  width: 70rem;
+}
+@media only screen and (max-width: 1600px) {
+  .header .profile-pic__img {
+    height: 50rem;
+    width: 50rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .header .profile-pic__img {
+    height: 50rem;
+    width: 50rem;
+  }
 }
 
 .navBar {
@@ -738,13 +776,13 @@ body {
   background-color: rgb(61, 62, 66);
 }
 .rcContainer .cards__item__img {
-  height: 30rem;
-  width: 30rem;
+  height: 20rem;
+  width: 20rem;
 }
 @media only screen and (max-width: 767.98px) {
   .rcContainer .cards__item__img {
-    height: 10rem;
-    width: 10rem;
+    height: 5rem;
+    width: 5rem;
   }
 }
 .rcContainer .cards__item__link {

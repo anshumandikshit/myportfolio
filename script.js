@@ -7,6 +7,7 @@ const sideBarNav = document.querySelector('.sidenav') ;
 const mainGridContainer = document.querySelector('.gridContainer') ;
 
 console.log("navHamburger------>>>>",navHamburger);
+console.log("Vw----->",window.visualViewport);
 
 const allSections = document.querySelectorAll("section");
 
@@ -30,7 +31,7 @@ const onNavBarClick = (event) => {
 
 const onScrollToMainClick = (event) => {
   const headerNextElement = header.nextElementSibling;
-  headerNextElement.style.marginTop = `${navBarHeight + 100}px`;
+  //headerNextElement.style.marginTop = `${navBarHeight + 100}px`;
   headerNextElement.scrollIntoView({
     behavior: "smooth",
     

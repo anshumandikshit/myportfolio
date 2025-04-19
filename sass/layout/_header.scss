@@ -109,5 +109,36 @@
         }
     }
 
+    .profile-pic {
+        grid-row: 2 / -1;
+        grid-column: 7 / 11;
+        //margin-left: 3rem;
+        animation: delay-visibility 01s ease-out;
+        animation-delay: 1s;
+        animation-fill-mode: backwards;
+        height: fit-content;
+        align-self: center;
+        &__img {
+            height: 70rem;
+            width: 70rem;
+
+            @media only screen and (max-width: 1600px) {
+                height: 50rem;
+                width: 50rem;
+            }
+            @media only screen and (max-width: 1200px) {
+                height: 50rem;
+                width: 50rem;
+            }
+              
+            
+        }
+    }
+
+    // @media only screen and (max-width: 767.98px) {
+    //     grid-template-columns: repeat(12, 1fr);
+    //     grid-template-rows: repeat(6, 1fr);
+    // }
+
 
 }

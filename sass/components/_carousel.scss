@@ -31,6 +31,16 @@
       height: 5rem;
       width: 5rem;
     }
+
+    @media only screen and (max-width: 1200px) {
+      &__btn--left {
+        left: -15%;
+      }
+  
+      &__btn--right {
+        right: -15%;
+      }
+    }
   }
 
   &__track {
